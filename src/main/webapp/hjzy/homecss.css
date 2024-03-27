@@ -1,0 +1,128 @@
+@charset "UTF-8";
+*{
+			margin: 0px;
+			padding: 0px;
+		}
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -250px; /* 侧边栏初始状态隐藏在左边 */
+            width: 170px;
+            height: 100%;
+            background-color: #ccc;
+            transition: left 0.3s ease; /* 使用过渡效果使侧边栏动画出现/隐藏 */
+        }
+        
+        #mainContent {
+            margin-left: 20px; /* 留出侧边栏的空间 */
+            transition: margin-left 0.3s ease; /* 使用过渡效果使主要内容动画移动 */
+        }
+
+        #openButton {
+		   display: block;
+		   width: 30px; /* 设置按钮宽度 */
+		   height: 30px; /* 设置按钮高度 */
+		   background-image: url('../imgs/ce.png'); /* 替换为您的图像路径 */
+		   background-size: cover; /* 让图像填充整个按钮 */
+		   background-position: center; /* 图像居中显示 */
+		   background-repeat: no-repeat; /* 不重复显示背景图像 */
+		   border: none; /* 移除按钮边框 */
+		   cursor: pointer; /* 鼠标指针样式设为手型 */
+		   margin-left: 20px;
+		   margin-right: 30px;
+        }
+		#head{
+			height: 80px;
+			display: flex;
+			align-items: center;
+			margin-bottom: 3px;
+			background-color: rgb(240, 240, 240);
+		}
+		.sidebar p{
+			cursor: pointer; 
+			height: 30px;
+			line-height: 30px;
+			margin: 0 0 3px 10px;
+			background-color: blanchedalmond;
+		}
+		
+		
+		#body{
+			height: 300px;
+			
+		}
+		#body input{
+			width: 200px;
+			height: 30px;
+		}
+		#body select{
+			width: 200px;
+			height: 30px;
+		}
+		#formt{
+			height: 50px;
+			display: flex;
+			align-items: center; /* 垂直居中 */
+			margin-bottom: 10px;
+		}
+		#formt:first-child{
+			margin-left: 10px;
+		}
+		#formc{
+			height: 50px;
+			display: flex;
+			align-items: center; /* 垂直居中 */
+			margin-bottom: 10px;
+		}
+		#formc label{
+			margin-left: 10px;
+		}
+		#sou{
+			border-radius: 5px;	
+			background-color: rgb(248, 248, 248);
+			color: aqua;
+			border: none;
+			cursor: pointer;
+		}
+		#sou:hover{
+			background-color:cornflowerblue;
+			transition: 0.3s;
+		}
+		#sou:not(:hover){
+			color: aqua;
+			transition: 0.3s;
+		}
+		#formb{
+			height: 50px;
+			display: flex;
+			align-items: center; /* 垂直居中 */
+			margin-bottom: 10px;
+			padding-left: 10px;
+		}
+		#formb a{
+			color: aqua;
+			width: 100px;
+			height: 30px;
+			text-decoration: none;
+			background-color: rgb(248, 248, 248);
+			border-radius: 5px;	
+			margin-right: 30px;
+			text-align: center;
+			line-height: 30px;
+		}
+		#formb a:hover{
+			background-color:cornflowerblue;
+			transition: 0.3s;
+		}
+		#formb a:not(:hover){
+			color: aqua;
+			transition: 0.3s;
+		}
+		
+		#tright{
+			display: flex;
+			justify-content: flex-end;
+		}
+		
+		
+		

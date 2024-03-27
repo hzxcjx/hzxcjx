@@ -1,0 +1,154 @@
+@charset "UTF-8";
+#guesthelp{
+		width: 385px;
+		height: 430px;
+		background-color: rgb(240, 240, 240);
+		position: absolute;
+		top: 130px;
+		left: 500px;
+		display: none;
+	}
+	.mm{
+		color: red;	
+	}
+	#guesttop{
+		width: 385px;
+		height: 35px;
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+		justify-content: center;
+		background-color: rgb(40, 54, 67);
+		position: relative;
+	}
+	#guesthelp label {
+	  display: flex;
+	  align-items: center;
+	  text-align: left;
+	  margin-bottom: 10px;
+	  height: 35px;
+	  justify-content: space-evenly;
+	}
+	#guesthelp label input, #guesthelp select, #guesthelp textarea{
+	  height: 25px;
+	  width: 190px;
+	  
+	}
+	#guesthelp textarea{
+	  height: 40px;
+	}
+	.sm{
+		color: black;
+		font-weight: 1000;
+	}
+	#guestbutton{
+		margin-top: 20px;
+		margin-right: 45px;
+		float: right;
+		width: 60px;
+		height: 35px;
+		border-radius: 4px;
+		border: none;
+		color: white;
+		background-color: rgb(64, 158, 254);
+		cursor: pointer;
+		
+	}
+	#guestbutton:hover{
+		background-color: rgb(10, 113, 167);
+		transition: 0.3s;
+	}
+	#guestbutton:not(:hover){
+		background-color: rgb(64, 158, 254);
+		transition: 0.3s;
+	}
+	#selectedTextContainer {
+		margin-right: auto; /* 将此元素向右侧对齐 */
+	}
+	#guesttop img{
+		position: absolute;
+		right: 0px;
+		cursor: pointer;
+	}
+	.qrcode{
+        width:400px;
+        height:260px;
+        float: left;
+        margin: 40px 40px;
+    }
+    .qrcode>img{
+		display: block;border:5px solid white;
+		margin-left: 22px;
+	}
+	#formb a{
+		cursor:pointer;
+	}
+
+	#search th,td{
+		height: 30px;
+		border: 1px solid black; 
+		text-align: center; 
+	}
+	.state[data-state="待审批"] {
+	    color: yellow;
+	    border:1px yellow solid;
+	    border-radius:3px;
+	    padding:3px;
+	}
+	
+	.state[data-state="已通过"] {
+	    color: green;
+	    border:1px green solid;
+	    border-radius:3px;
+	    padding:3px;
+	}
+	
+	.state[data-state="已拒绝"] {
+	    color: red;
+	    border:1px red solid;
+	    border-radius:3px;
+	    padding:3px;
+	}
+	.p {
+		float: right;
+    	margin-top: 30px;
+    	margin-right: 80px;
+		font-size:14px;
+	}
+	
+	.p a {
+		text-decoration: none;
+		margin: 5px 5px;
+		padding: 3px 5px;
+		border: 1px solid gray;
+		font-size: 12px;
+	}
+	
+	.p a:hover {
+		color: red;
+	}
+	.delete-button, .audit-button {
+	    padding: 5px 10px;
+	    border: none;
+	    border-radius: 4px;
+	    color: white;
+	    cursor: pointer;
+	}
+	.delete-button {
+	    background-color: red;
+	    
+	}
+	
+	.audit-button {
+	    background-color: green;
+	}
+	
+	.delete-button:hover {
+	    background-color: darkred;
+	    transition: 0.3s;
+	}
+	
+	.audit-button:hover {
+	    background-color: darkgreen;
+	    transition: 0.3s;
+	}
